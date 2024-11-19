@@ -4,6 +4,7 @@
 <head> <!--a böngészőnek ad utasításokat-->
     <meta charset="UTF-8"> <!--karakterkódolás beállítása-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> <!--külső stíluslap (external)-->
     <style>
         h1 {
@@ -15,8 +16,44 @@
 <body> <!--a felhasználónak ad információkat-->
     <h1 style="color: blueviolet;">Szöveg</h1> <!--címsor, h1-h6-ig van, inline stílusbeállítás a legerősebb-->
     <p></p> <!--bekezdések készítése-->
+
+    <!--2024. 11. 19. órai munka-->
     <img src="link vagy img/kep.jpg" alt="ha nem jeleníthető meg a kép" title="ha az egeret a kép fölé viszem"> <!--kép beillesztése, letöltött kép vagy link lehet a forrás-->
     <a href="link vagy navigációs menüpont vagy ugrópont" target="_blank"></a> <!--hivatkozás készítése, 3 változata van: 1. link: weboldal címe van beírva a href-be és ha külön oldalon kell megnyitni, akkor a target="_blank"-ot kell használni, 2. saját navigációs menü, pl.: cica.html, 3. ugrópont: témához ugrás pl.: Ugrás az oldal elejére - href="#fejlec" -->
+    <ul> <!--számozatlan felsorolás, alapbeállítás: disc (fekete pont), választható jelölések: square (fekete négyzet), circle (üres kör)-->
+        <li></li> <!--lista elem-->
+        <li></li>
+        <li></li>
+    </ul> <!--gyors kódja egy 3 listaelemből álló számozatlan felsorolásnak: emmet: ul>li*3 -->
+    <ol> <!--számozott felsorolás, alapbeállítás: 1. 2. 3.; választható jelölések: I. II. III., i. ii. iii., A. B. C., a. b. c.-->
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <ul>
+        <li>macska</li>
+        <li>kutya</li>
+        <li>hal</li>
+        <li>kacsa</li>
+        <li>tyúk</li>
+    </ul> <!--gyors kódja egy előre megírt listának: kijelölöm a listaelemeket, F1 - Wrap with Abbreviation - ul>li*-->
+
+    <br> <!--sortörés-->
+    <hr> <!--vízszintes vonalat készít-->
+    <span></span> <!--egyedi formázás szavakra, mondatokra-->
+
+    <b></b> vagy <strong></strong> <!--félkövér betű stílus HTML tag segítségével-->
+    <p class="fw-bold"></p> <!--félkövér stílusbeállítás Bootstrap segítségével-->
+
+    <i></i> vagy <em></em> <!--dőlt betű, HTML tag segítségével-->
+    <p class="fst-italic"></p> <!--dőlt betű Bootstrap segítségével-->
+
+    <u></u> <!--aláhúzott, HTML tag segítségével-->
+    <p class="text-decoration-underline"></p> <!--aláhúzott Bootstrap segítségével-->
+    <p class="text-decoration-none"></p> <!--aláhúzás megszüntetése Bootstrap segítségével-->
+
     
+
 </body>
 </html>
