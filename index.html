@@ -53,7 +53,55 @@
     <p class="text-decoration-underline"></p> <!--aláhúzott Bootstrap segítségével-->
     <p class="text-decoration-none"></p> <!--aláhúzás megszüntetése Bootstrap segítségével-->
 
-    
+    <table> <!--táblázat készítése-->
+        <caption></caption> <!--ezzel lehet címet adni a táblázatnak-->
+        <thead> <!--a táblázat fejrésze-->
+            <tr> <!--táblázat sora-->
+                <th colspan="2"></th> <!--fejléc cella, oszlopok összevonása-->
+            </tr>
+        </thead>
+        <tbody> <!--táblázat törzs része-->
+            <tr>
+                <td rowspan="2"></td> <!--adat cella, sorok összevonása-->
+            </tr>
+        </tbody>
+        <tfoot> <!--táblázat láb része-->
+        </tfoot>
+    </table>
+
+    <form action=""> <!--űrlap készítése-->
+        <fieldset> <!--részekre bontható általa az űrlap, pl.: személyes adatok rész, szegélyt rak az adott rész köré-->
+            <legend>Személyes adatok</legend> <!--az adott rész címének beállítása, pl.: személyes adatok-->
+            <label for="nev">NÉV:</label> <!--megnevezés-->
+            <input type="text" name="nev" id="nev" placeholder="Kiss István">
+            <!--beviteli mező, sokféle típus van, egyedi azonosítóval a label összekapcsolható, a placeholderbe beírt szöveg segítséget ad a felhasználónak az űrlap kitöltésében-->
+            <!--input type lehet:
+            - szöveg (text),
+            - jelölő négyzet (checkbox) - ha több választás lehetséges,
+            - rádió gomb (radio) - egy választás lehetséges,
+            - email cím (email),
+            - szám (number),
+            - dátum (date),
+            - jelszó (password),
+            - idő (time)
+            stb., DE én csak a fent leírtakat fogom kérdezni!!-->
+        </fieldset>
+        <button type="button">GOMB</button> <!--gomb-->
+        <!--gombot kétféleképpen lehet hozzáadni a weboldalhoz:
+        1. input "tag" type="button" (sima gomb), type="submit" (Küldés), type="reset" (visszaállítás)
+        Ha beállítunk value-t (értéket), akkor csak azt fogja kiírni a gombra, amennyiben ezt kihagyjuk a böngésző a saját erre alkalmazott beállítását fogja használni az általad használt operációs rendszer nyelvén.
+        2. button "tag"type="button" (sima gomb), type="submit" (Küldés), type="reset" (visszaállítás)-->
+        <label for="uzenet">Üzenet a szakácsnak:</label>
+        <textarea name="message" id="uzenet" cols="30" rows="10"></textarea> <!--szövegmező nagyobb terjedelmű szövegek írása esetén pl.: Üzenet a szakácsnak: Nem kérek rukkolát a pizzára!-->
+        <label for="cars">AUTÓK:</label>
+        <select name="autok" id="cars"> <!--lenyíló menüs választási lehetőség-->
+            <option value=""></option> <!--lenyíló menü eleme-->
+            <option value="">Audi</option>
+            <option value="">BMW</option>
+            <option value="">Ford</option>
+            <option value="">Fiat</option>
+        </select>
+    </form>
 
 </body>
 </html>
