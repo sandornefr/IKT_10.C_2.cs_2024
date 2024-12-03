@@ -20,6 +20,9 @@
     <!--2024. 11. 19. órai munka-->
     <img src="link vagy img/kep.jpg" alt="ha nem jeleníthető meg a kép" title="ha az egeret a kép fölé viszem"> <!--kép beillesztése, letöltött kép vagy link lehet a forrás-->
     <a href="link vagy navigációs menüpont vagy ugrópont" target="_blank"></a> <!--hivatkozás készítése, 3 változata van: 1. link: weboldal címe van beírva a href-be és ha külön oldalon kell megnyitni, akkor a target="_blank"-ot kell használni, 2. saját navigációs menü, pl.: cica.html, 3. ugrópont: témához ugrás pl.: Ugrás az oldal elejére - href="#fejlec" -->
+    <a href="https://..." target="_blank">LINK</a> <!--link, amely új oldalon nyílik meg-->
+    <a href="cica.html">SAJÁT OLDALRA NAVIGÁL</a>
+    <a href="#leiras">UGRÓPONT</a> <!--link, amely egy fejezet egyedi azonosítójához ugrik-->
     <ul> <!--számozatlan felsorolás, alapbeállítás: disc (fekete pont), választható jelölések: square (fekete négyzet), circle (üres kör)-->
         <li></li> <!--lista elem-->
         <li></li>
@@ -31,16 +34,15 @@
         <li></li>
     </ol>
 
-    <ul>
+    <ul id="cica" class="kutya">
         <li>macska</li>
         <li>kutya</li>
         <li>hal</li>
         <li>kacsa</li>
         <li>tyúk</li>
-    </ul> <!--gyors kódja egy előre megírt listának: kijelölöm a listaelemeket, F1 - Wrap with Abbreviation - ul>li*-->
+    </ul> <!--gyors kódja egy előre megírt listának: kijelölöm a listaelemeket, F1 - Wrap with Abbreviation - ul#cica.kutya>li*-->
 
     <br> <!--sortörés-->
-    <hr> <!--vízszintes vonalat készít-->
     <span></span> <!--egyedi formázás szavakra, mondatokra-->
 
     <b></b> vagy <strong></strong> <!--félkövér betű stílus HTML tag segítségével-->
@@ -68,7 +70,11 @@
         <tfoot> <!--táblázat láb része-->
         </tfoot>
     </table>
+    <div></div> <!--keret-->
+<!--az ágazatin előforduló tag-eknek itt a vége-->
 
+    
+    <hr> <!--vízszintes vonalat készít-->
     <form action=""> <!--űrlap készítése-->
         <fieldset> <!--részekre bontható általa az űrlap, pl.: személyes adatok rész, szegélyt rak az adott rész köré-->
             <legend>Személyes adatok</legend> <!--az adott rész címének beállítása, pl.: személyes adatok-->
@@ -102,6 +108,11 @@
             <option value="">Fiat</option>
         </select>
     </form>
-
+    <nav></nav> <!--menürendszer kialakítása-->
+    <header></header> <!--fejléc a body-n belül-->
+    <footer></footer> <!--lábléc a body-n belül-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3QakihAEwoU?si=pQ-vWgNP-8DxB9ty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--videókat lehet beilleszteni a weboldalra-->
+    <sub></sub> <!--alsó index-->
+    <sup></sup> <!--felső index-->
 </body>
 </html>
